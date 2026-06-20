@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduLearn</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">Edu<span>Learn</span></div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="mobile-btn"><button class="btn">Get Started</button></li>
+    </ul>
+    <button class="Startbtn btn desktop-btn">Get Started</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="left">
+      <h2>Learn New Skills,<br><span>Build Your Future</span></h2>
+      <p>Access 500+ free courses in Hindi & English. Learn from top experts and get verified certificates — all in one
+        place.</p>
+      <button class="btn getbtn">Explore Courses</button>
+    </div>
+
+    <div class="right">
+      <div class="top-courses">
+        <p class="courses-label">🔥 Popular Courses</p>
+        <ul class="courses">
+          <li><span>JavaScript Advanced</span><button>Enroll</button></li>
+          <li><span>AI / ML</span><button>Enroll</button></li>
+          <li><span>Cyber Security</span><button>Enroll</button></li>
+          <li><span>Next.js Basics</span><button>Enroll</button></li>
+          <li><span>Generative AI</span><button>Enroll</button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h1>Our Features</h1>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">📚</div>
+        <h2>Free Courses</h2>
+        <p>Access hundreds of free courses in Hindi and English taught by industry experts.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🏆</div>
+        <h2>Top Experts</h2>
+        <p>Learn directly from professionals with real-world experience and interview prep.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📜</div>
+        <h2>Free Certificates</h2>
+        <p>Get verified certificates after completing courses — share on LinkedIn instantly.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p class="contact-sub">Have questions? We'd love to hear from you.</p>
+
+    <div class="contact_box">
+      <form action="">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label for="sub">Subject</label>
+          <input type="text" id="sub" placeholder="What is this about?">
+        </div>
+
+        <div class="form-group">
+          <label for="textarea">Message</label>
+          <textarea id="textarea" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button class="btn submit-btn">Send Message</button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer" id="footer">
+    <div class="footer_logo">Edu<span>Learn</span></div>
+    <p>
+      @copyright - Pawan Tripathi, 2026
+    </p>
+  </footer>
+
+</body>
+
+</html>

@@ -50,4 +50,20 @@ Mistakes I made:
 
 ---
 
+## Task 3 — Background Color Changer
+
+Five colored buttons that change the page background when clicked. Simple but it helped me understand how JavaScript talks to CSS through the DOM.
+
+Things I learned:
+- `document.body.style.backgroundColor` to change styles with JS
+- `querySelector` to select elements by class
+- Adding `:focus` styles so the button stays highlighted after click
+- `transition` on body for smooth color change
+
+Mistakes I made:
+- Wrote `bottom: 0` in the `*` selector instead of `margin: 0` — completely different property
+- Used `max-width: 100vw` again even though I fixed this same thing in Task 1
+
+---
+
 *More tasks coming daily.*

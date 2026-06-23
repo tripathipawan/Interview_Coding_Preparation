@@ -66,4 +66,39 @@ Mistakes I made:
 
 ---
 
+## Task 4 — Show / Hide Password
+
+A password input with a toggle button that shows and hides the password text.
+
+Things I learned:
+- Changing `input.type` between "password" and "text" using JS
+- Always use `const` when the variable won't be reassigned
+- Difference between `==` and `===` — always use triple equals because it checks type as well
+- `btn.innerHTML` to dynamically change button text
+
+Mistakes I made:
+- Used `let` instead of `const` for DOM elements that never change
+- Mixed `===` and `==` in the same if/else block — should always be consistent with `===`
+
+
+---
+
+## Task 5 — Character Counter
+
+A textarea that counts characters in real time and stops input at 250 characters.
+
+Things I learned:
+- `input` event fires on every keystroke — better than `keyup` for this use case
+- `textarea.value.length` to count characters
+- `>=` instead of `===` for the limit check — because pasting text can jump past the exact number
+- `slice(0, 250)` to cut off extra characters
+- Neumorphism design — same background color on body and container, two box-shadows (one light, one dark)
+
+Mistakes I made:
+- First wrote `=== 250` instead of `>= 250` — paste would bypass the limit completely
+- Had `console.log` in the final code — should be removed before pushing
+- Typo in placeholder text
+
+---
+
 *More tasks coming daily.*

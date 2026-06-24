@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #000017;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80vw;
+  max-width: 600px;
+  background-color: #1b1b37;
+  border-radius: 10px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.container h1 {
+  color: #b2dbff;
+  font-size: 2rem;
+  margin: 15px auto;
+}
+
+.container .top-box {
+  margin-bottom: 20px;
+}
+
+.container .top-box .input-box,
+.container .top-box .add-btn {
+  outline: none;
+  border: 1px solid #b2dbff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.container .top-box .input-box {
+  width: 70%;
+  background-color: #000017;
+  color: #b2dbff;
+  text-transform: capitalize;
+}
+
+.container .top-box .input-box:focus {
+  background-color: #1b1b37;
+}
+
+.container .top-box .add-btn {
+  background-color: #087800;
+  color: #ffffff;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.container .top-box .add-btn:hover {
+  background-color: #d2dbff;
+  color: #087800;
+}
+
+.container .hr {
+  border-radius: 20px;
+  border: 1px solid #d2dbff;
+}
+
+.container .bottom-box {
+  margin: 20px 0 10px 0;
+}
+
+.container .bottom-box ul li {
+  list-style: none;
+  font-size: 0.9rem;
+  display: flex;
+  margin: 20px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #b2dbff;
+  text-transform: capitalize;
+}
+
+.container .bottom-box ul li .task{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.container .bottom-box ul li .delete-btn {
+  border-radius: 10px;
+  background-color: #d00000;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 10px;
+  outline: none;
+  border: 2px solid #b2dbff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.container .bottom-box ul li .delete-btn:hover {
+  border: 2px solid #d00000;
+  color: #d00000;
+  background-color: #b2dbff;
+}

@@ -99,6 +99,18 @@ Mistakes I made:
 - Had `console.log` in the final code — should be removed before pushing
 - Typo in placeholder text
 
+
+
+
+
+---
+
+
+
+---
+
+
+
 ---
 
 *More tasks coming daily.*

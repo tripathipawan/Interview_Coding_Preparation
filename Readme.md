@@ -140,4 +140,22 @@ Mistakes I made:
 
 ---
 
+## Task 8 — Image Slider
+
+An image slider with next and previous buttons that loops through 5 images.
+
+Things I learned:
+- `querySelectorAll` returns all matching elements as a NodeList
+- `forEach` to loop through all images and hide them before showing the current one
+- Modulo `%` operator to loop back — last image se next press karo toh first pe aa jaao
+- `(current - 1 + images.length) % images.length` trick for prev so it never goes negative
+- CSS link tag missing tha — JS sahi tha but CSS load nahi hui thi
+
+Mistakes I made:
+- `Image.length` likha tha capital I se — JavaScript case sensitive hai
+- CSS file link karna bhool gaya HTML mein — isliye images hide nahi ho rahi thi
+
+
+---
+
 *More tasks coming daily.*

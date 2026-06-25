@@ -106,9 +106,36 @@ Mistakes I made:
 ---
 
 
+## Task 6 — Dark / Light Mode Toggle
+
+A toggle button that switches the page between dark and light mode smoothly.
+
+Things I learned:
+- `classList.toggle()` to add and remove a class in one line
+- `classList.contains()` to check if a class exists — more reliable than checking classList.value
+- Overriding CSS variables inside a class instead of rewriting every element's styles
+- Putting `transition: all 0.2s ease` on `*` so every element animates automatically
+
+Mistakes I made:
+- First used `classList.value === 'light-mode'` which breaks if body ever has more than one class
+- Button was empty in HTML — if JS fails to load, button shows nothing
 
 ---
 
+## Task 7 — Todo List
+
+Add tasks to a list and delete them individually with a button.
+
+Things I learned:
+- `document.createElement()` to create HTML elements from JS
+- `classList.add()` to add classes to created elements
+- `appendChild()` to place elements inside other elements
+- `element.remove()` to delete a task from the DOM
+- Why order matters — validate input first, then process, then reset
+
+Mistakes I made:
+- Used `createElement('delete-btn')` — that's a class name, not an HTML tag
+- Cleared `inputbox.value = ''` before the empty check, so the check always returned true and delete listener never ran
 
 
 ---

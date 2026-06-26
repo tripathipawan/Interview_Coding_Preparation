@@ -155,6 +155,24 @@ Mistakes I made:
 - `Image.length` likha tha capital I se — JavaScript case sensitive hai
 - CSS file link karna bhool gaya HTML mein — isliye images hide nahi ho rahi thi
 
+---
+
+
+## Task 9 — Random Color Generator
+
+Generates a random hex color on button click and applies it to the background. Also copies the hex code to clipboard.
+
+Things I learned:
+- `Math.random() * 16` with `Math.floor()` to get a random index
+- Looping 6 times to build a hex color string character by character
+- `navigator.clipboard.writeText()` to copy text to clipboard
+- `setTimeout()` to temporarily change button text back after 1 second
+
+Mistakes I made:
+- Used `let` for a DOM element that never changes — should be `const`
+- For loop had a comma instead of semicolon — `for(let i = 0, i < 6)` instead of `for(let i = 0; i < 6)`
+- Logic was written outside the event listener so it only ran once on page load
+
 
 ---
 

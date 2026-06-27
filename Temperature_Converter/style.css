@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: #0a423a;
+  width: 100%;
+  height: 100vh;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px;
+  border: 2px solid #007885;
+  border-radius: 10px;
+  background-color: #c8faff;
+  text-align: center;
+}
+
+.container .top-box{
+  padding: 10px 0;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0a423a;
+}
+
+.container .top-box .input-box,
+.container .top-box .result {
+  outline: none;
+  border: 2px solid #004952;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #007885;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #c8faff;
+}
+
+.container .top-box .input-box {
+  width: 30vw;
+}
+
+.container .top-box .input-box::placeholder{
+  color: #c8faff;
+}
+
+.container .top-box .input-box:focus{
+  border-color: #c8faff;
+}
+
+.container .top-box .result {
+  width: 30vw;
+  display: inline-block;
+}
+
+.container .bottom-box button{
+  padding: 10px 15px;
+  border: 2px solid #0a423a;
+  background-color: #c8faff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container .bottom-box button:hover{
+  background: #0a423a;
+  color: #c8faff;
+}

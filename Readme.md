@@ -173,6 +173,25 @@ Mistakes I made:
 - For loop had a comma instead of semicolon — `for(let i = 0, i < 6)` instead of `for(let i = 0; i < 6)`
 - Logic was written outside the event listener so it only ran once on page load
 
+---
+
+## Task 10 — Temperature Converter
+
+Converts temperature between Celsius and Fahrenheit in both directions.
+
+Things I learned:
+- `type="number"` input so only numbers are accepted
+- `Number()` to convert string input to a number
+- `isNaN()` to catch invalid values like letters
+- `toFixed(2)` to limit decimal places to 2
+- `display: inline-block` — inline-block width accept karta hai, inline nahi karta
+
+Mistakes I made:
+- Used `type="text"` instead of `type="number"`
+- Button class names and formulas were swapped — cel button had C to F formula and fah had F to C
+- Used `display: inline` on result — width was being ignored completely
+- Wrote `f` and `c` instead of `°F` and `°C`
+
 
 ---
 

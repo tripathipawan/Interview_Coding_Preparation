@@ -80,7 +80,6 @@ Mistakes I made:
 - Used `let` instead of `const` for DOM elements that never change
 - Mixed `===` and `==` in the same if/else block — should always be consistent with `===`
 
-
 ---
 
 ## Task 5 — Character Counter
@@ -99,12 +98,7 @@ Mistakes I made:
 - Had `console.log` in the final code — should be removed before pushing
 - Typo in placeholder text
 
-
-
-
-
 ---
-
 
 ## Task 6 — Dark / Light Mode Toggle
 
@@ -137,7 +131,6 @@ Mistakes I made:
 - Used `createElement('delete-btn')` — that's a class name, not an HTML tag
 - Cleared `inputbox.value = ''` before the empty check, so the check always returned true and delete listener never ran
 
-
 ---
 
 ## Task 8 — Image Slider
@@ -156,7 +149,6 @@ Mistakes I made:
 - CSS file link karna bhool gaya HTML mein — isliye images hide nahi ho rahi thi
 
 ---
-
 
 ## Task 9 — Random Color Generator
 
@@ -192,6 +184,23 @@ Mistakes I made:
 - Used `display: inline` on result — width was being ignored completely
 - Wrote `f` and `c` instead of `°F` and `°C`
 
+---
+
+## Task 11 — BMI Calculator
+
+Takes height in cm and weight in kg, calculates BMI and shows the category.
+
+Things I learned:
+- BMI formula: weight / (height in meters)²
+- Converting cm to meters by dividing by 100
+- Chaining multiple validations with if/else if
+- Combining two empty checks into one with ||
+- Weight and height range validation to catch unrealistic inputs
+
+Mistakes I made:
+- First forgot to validate weight — only height was being checked
+- Had two separate if blocks for empty checks instead of combining with ||
+- Missing cursor: pointer on the button
 
 ---
 

@@ -50,7 +50,7 @@ body {
   border: 2px solid #b9ffe8;
   background: #430043;
   color: #b9ffe8;
-  transition: all 0.3s ease-out, transform 0.1s ease;;
+  transition: all 0.3s ease-out, transform 0.1s ease;
   cursor: pointer;
 }
 

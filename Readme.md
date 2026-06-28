@@ -204,4 +204,23 @@ Mistakes I made:
 
 ---
 
+## Task 12 — Number Guessing Game
+
+A game where the computer picks a random number between 1 and 100 and the user has 3 attempts to guess it. Shows Too High, Too Low, or Correct after each guess.
+
+Things I learned:
+- `Math.floor(Math.random() * 100) + 1` to generate a random number between 1 and 100
+- Using a `let attempts` variable to track guesses instead of a for loop
+- Why `const` vs `let` matters — secret needed to be `let` so it could be reassigned on reset
+- Template literals with backticks to show the secret number in game over message
+- Checking `attempts >= maxAttempts` at the top of the click handler to stop further input
+- Console history doesn't clear automatically — `console.clear()` is needed for that
+- Removing console.log from final code so the user can't cheat by opening DevTools
+
+Mistakes I made:
+- First tried using a for loop to limit attempts — that just registered 3 click listeners instead of limiting clicks
+- Declared secret with const so it couldn't be updated on reset — changed to let
+
+---
+
 *More tasks coming daily.*

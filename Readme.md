@@ -244,4 +244,23 @@ Mistakes I made:
 
 ---
 
+## Task 14 — Stopwatch
+
+A stopwatch with start, stop, and reset functionality. Start button text changes to Continue after first use.
+
+Things I learned:
+- `setInterval` to increment a counter every second
+- `clearInterval` to pause the timer
+- Storing the interval ID in a variable so it can be cleared later
+- Why `timer = null` is needed after clearInterval — without it the start button check `if (timer) return` would block restart
+- Converting total seconds to HH:MM:SS using Math.floor and modulo
+- Moving pad function inside counting since it is only used there
+
+Mistakes I made:
+- Used `let` instead of `const` for DOM elements
+- Reset was showing 0 instead of 00 — needed to pass string '00' not number 0
+- Forgot `timer = null` after stop — so clicking start again after stop was blocked
+
+---
+
 *More tasks coming daily.*

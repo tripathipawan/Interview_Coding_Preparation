@@ -223,4 +223,25 @@ Mistakes I made:
 
 ---
 
+## Task 13 — Digital Clock
+
+A live digital clock that updates every second and shows the current time in 12-hour format with AM/PM, plus the full date.
+
+Things I learned:
+- `new Date()` to get the current time and date
+- `setInterval()` to run a function every 1000ms (1 second)
+- Why `new Date()` must be inside the interval — outside it only captures time once at page load
+- `padStart()` or ternary to add leading zero — showing 09 instead of 9
+- `getDay()` and `getMonth()` return numbers — need an array to convert to names
+- `getHours() % 12 || 12` trick to convert 24hr to 12hr format
+- Calling the function once immediately before setInterval so the clock shows right away instead of waiting 1 second
+
+Mistakes I made:
+- Used `setTimeout` instead of `setInterval` — only ran once
+- Had `new Date()` outside the interval so time never updated
+- `getDay()` was showing 0-6 numbers instead of day names
+- `getMonth()` starts from 0 not 1 — January is 0
+
+---
+
 *More tasks coming daily.*

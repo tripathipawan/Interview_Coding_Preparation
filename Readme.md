@@ -263,4 +263,25 @@ Mistakes I made:
 
 ---
 
+## Task 15 — Calculator
+
+A fully working calculator with all basic operations built using event delegation.
+
+Things I learned:
+- Event delegation — one listener on parent instead of every button
+- `e.target` to find which button was clicked
+- `e.target.classList.contains('btn')` to avoid firing on the container itself
+- `eval()` to calculate a string expression
+- `try/catch` to handle invalid expressions gracefully
+- `createElement` and `appendChild` to build all buttons dynamically from an array
+- Why `innerHTML === '0'` check is needed — so numbers don't append after a leading zero
+
+Mistakes I made:
+- Attached listener to only the first button with querySelector instead of using delegation
+- Forgot `if (!e.target.classList.contains('btn')) return` — so clicking the container added all button HTML to display
+- Initial display was '00' but check was for '0' — so '009' was showing instead of '9'
+- After Error, new input was appending to 'Error' string instead of replacing it
+
+---
+
 *More tasks coming daily.*

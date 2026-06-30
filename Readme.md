@@ -305,4 +305,21 @@ Mistakes I made:
 
 ---
 
+## Task 17 — Form Validation
+
+A form with Name, Email, Password, and Confirm Password fields that validates everything on submit without page reload.
+
+Things I learned:
+- `e.preventDefault()` to stop the form from reloading the page on submit
+- Regex pattern `/^[^\s@]+@[^\s@]+\.[^\s@]+$/` to validate email format — type="email" alone is too loose, it accepts things like "a@b"
+- `form.reset()` to clear all fields after successful submission
+- setTimeout only delays code, it doesn't undo a previous setTimeout — needed a second setTimeout to clear the message after showing it
+
+Mistakes I made:
+- Used && instead of || when checking password and confirm password length — && meant the length check on password never actually ran
+- Only had one setTimeout to show the message, forgot a second one to hide it again
+- Forgot form.reset() so fields stayed filled after successful submit
+
+---
+
 *More tasks coming daily.*

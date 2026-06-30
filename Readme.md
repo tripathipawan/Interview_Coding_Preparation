@@ -284,4 +284,25 @@ Mistakes I made:
 
 ---
 
+## Task 16 — Search / Filter
+
+A live search that filters a name list as you type, showing "No results found" when nothing matches.
+
+Things I learned:
+- `querySelectorAll` returns a NodeList — forEach works directly on it, unlike `children` which returns HTMLCollection
+- `input` event fires on every keystroke for live filtering
+- `includes()` to check if search text exists anywhere in the name
+- `toLowerCase()` on both sides so search is case-insensitive
+- Tracking a `found` boolean across the forEach loop to know if any match existed
+- Removing the old "No results found" element before adding a new one — otherwise it duplicates on every keystroke
+- `setAttribute('id', value)` takes two arguments, not one
+
+Mistakes I made:
+- Used `lists.children.forEach()` which throws an error — children is not an array
+- Wrote `nofind.setAttribute('#notFound')` with only one argument
+- Wrote `msg.appendChild = nofind` as an assignment instead of calling it as a function
+- Created a new "No results found" element on every keystroke without removing the old one first — caused duplicates
+
+---
+
 *More tasks coming daily.*

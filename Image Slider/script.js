@@ -19,6 +19,6 @@ prevbtn.addEventListener('click', () => {
 });
 
 nextbtn.addEventListener('click', () => {
-  current = (current + 1) % images.length;
+  current = (current + 1 + imgs.length) % images.length;
   showImg();
 });

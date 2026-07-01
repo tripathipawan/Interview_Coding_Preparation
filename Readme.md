@@ -322,4 +322,23 @@ Mistakes I made:
 
 ---
 
+## Task 18 — Accordion / FAQ
+
+A FAQ accordion where clicking a question opens its answer and closes any other open answer.
+
+Things I learned:
+- `max-height` transition for smooth open/close animation — display none/block is abrupt and can't be transitioned
+- Adding and removing an `active` class is cleaner than toggling inline styles directly
+- Event delegation on the container instead of individual listeners on each item
+- `e.target.closest('.item')` to find the parent item element regardless of what was clicked inside
+- Template literals to create HTML structure in one go instead of multiple createElement calls
+- Closing all items before opening the clicked one ensures only one is open at a time
+
+Mistakes I made:
+- Used display none/block which has no smooth animation
+- Added a separate event listener to every question instead of using event delegation
+- Missing the "only one open at a time" behavior — all could be open simultaneously
+
+---
+
 *More tasks coming daily.*

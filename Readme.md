@@ -395,8 +395,4 @@ Projects completed: Landing Page, Counter, BG Color Changer, Show Hide Password,
 
 ---
 
-## Still learning. More projects coming.
-
----
-
-## *More tasks coming daily.*
+*Still learning. More projects coming*.

@@ -341,4 +341,26 @@ Mistakes I made:
 
 ---
 
+## Task 19 — Quiz App
+
+A 6 question quiz with 4 options each. Shows correct and incorrect answers on click, prevents multiple selections, and displays final score at the end.
+
+Things I learned:
+- Storing quiz data as an array of objects with question, options, and correct index
+- Using currentIndex to track which question is showing instead of forEach
+- `data-index` attribute to identify which option was clicked
+- `pointerEvents: none` to disable all options after one is selected — prevents multiple answers
+- Showing correct answer in green and wrong in red for all options at once after selection
+- `quesLength.innerHTML = questions.length` so the total count updates automatically if questions are added or removed
+- Hiding the Next button and showing final score when all questions are done
+
+Mistakes I made:
+- Never declared `btn` with getElementById so it was throwing a reference error
+- Used forEach loop on questions array which showed all questions at once instead of one at a time
+- Options were hardcoded in HTML instead of being generated from the data array
+- Question number in header was hardcoded as "of 5" instead of using questions.length
+- Multiple answers could be selected because pointerEvents was not being disabled after first click
+
+---
+
 *More tasks coming daily.*

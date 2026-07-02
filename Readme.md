@@ -363,4 +363,40 @@ Mistakes I made:
 
 ---
 
-*More tasks coming daily.*
+## Task 20 — Random Quote Generator
+
+Fetches quotes from a public API and displays a random one each time the button is clicked. Data is fetched only once and stored locally for faster subsequent quotes.
+
+Things I learned:
+- `fetch()` to make an HTTP request to an external API
+- `async/await` to handle asynchronous code cleanly
+- Why fetching once and storing in a variable is better than calling the API on every button click
+- `Math.random() * array.length` to pick a random item from an array
+- Separating fetch logic and display logic into two functions — `callAPI()` and `showRandom()`
+
+Mistakes I made:
+- Used forEach on all quotes but hardcoded index [0] so it always showed the first quote
+- Had no event listener on the button so clicking did nothing
+- Was calling the API on every button click instead of storing the data after the first fetch
+
+---
+
+## Journey Summary
+
+Started with zero JavaScript knowledge and built 20 projects over several weeks. Every task taught something new — from basic DOM manipulation to async API calls.
+
+Skills I picked up along the way:
+- HTML structure and semantic elements
+- CSS layouts with Flexbox and Grid, responsive design with media queries, CSS variables, transitions and animations, glassmorphism and neumorphism design
+- JavaScript fundamentals — DOM selection and manipulation, event listeners, conditionals, loops, arrays and objects, functions
+- Intermediate JS — async/await, fetch API, setInterval, localStorage patterns, event delegation, template literals, error handling with try/catch
+
+Projects completed: Landing Page, Counter, BG Color Changer, Show Hide Password, Character Counter, Dark Light Mode, Todo List, Image Slider, Random Color Generator, Temperature Converter, BMI Calculator, Number Guessing Game, Digital Clock, Stopwatch, Calculator, Search Filter, Form Validation, Accordion, Quiz App, Random Quote Generator.
+
+---
+
+## Still learning. More projects coming.
+
+---
+
+## *More tasks coming daily.*
